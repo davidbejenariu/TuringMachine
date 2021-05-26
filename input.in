@@ -1,0 +1,36 @@
+#
+0 1
+q0 q1 qRight0 qRight1 qLeft0 qLeft1 qSearch0L qSearch0R qSearch1L qSearch1R qAccept qReject
+q0
+qAccept
+qReject
+q0 0 qRight0 # >
+qRight0 0 qRight0 0 >
+qRight0 1 qRight0 1 >
+q0 1 qRight1 # >
+qRight1 0 qRight1 0 >
+qRight1 1 qRight1 1 >
+qRight0 # qSearch0L # <
+qSearch0L 0 q1 # <
+qRight1 # qSearch1L # <
+qSearch1L 1 q1 # <
+q1 0 qLeft0 # <
+qLeft0 0 qLeft0 0 <
+qLeft0 1 qLeft0 1 <
+q1 1 qLeft1 # <
+qLeft1 0 qLeft1 0 <
+qLeft1 1 qLeft1 1 <
+qLeft0 # qSearch0R # >
+qSearch0R 0 q0 # >
+qLeft1 # qSearch1R # >
+qSearch1R 1 q0 # >
+qSearch0R 1 qReject 1 -
+qSearch1R 0 qReject 0 -
+qSearch0L 1 qReject 1 -
+qSearch1L 0 qReject 0 -
+q0 # qAccept # -
+q1 # qAccept # -
+qSearch0L # qAccept # -
+qSearch0R # qAccept # -
+qSearch1L # qAccept # -
+qSearch1R # qAccept # -
