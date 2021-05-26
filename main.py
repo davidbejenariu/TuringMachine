@@ -37,6 +37,11 @@ class TuringMachine:
                 self.transitions[key] = value
 
     def checkWord(self, word):
+        """
+            generez de fiecare data un tape de lungime tapeLimit care incepe cu blank (#), contine cuvantul de verificat in mijloc si se
+            termina tot cu blank (#), astfel ca ne putem deplasa si in stanga, cu o limita totusi, data de tapeLimit (un milion este o limita
+            rezonabila pentru tape la acest proiect, sper)
+        """
         toFill = int(tapeLimit - len(word) / 2)
         tape = [self.blank] * toFill + list(word) + [self.blank] * toFill
 
